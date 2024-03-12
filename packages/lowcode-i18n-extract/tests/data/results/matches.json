@@ -1,0 +1,442 @@
+[
+  {
+    "path": ["componentsTree", "0", "methods", "paginationShowTotal", "source"],
+    "matches": [
+      {
+        "range": {
+          "start": 54,
+          "end": 66
+        },
+        "text": "共${total}条",
+        "isString": true,
+        "key": "i18n-gong-tota"
+      }
+    ]
+  },
+  {
+    "path": ["componentsTree", "0", "methods", "paginationShowTotal", "value"],
+    "matches": [
+      {
+        "range": {
+          "start": 54,
+          "end": 66
+        },
+        "text": "共${total}条",
+        "isString": true,
+        "key": "i18n-gong-tota"
+      }
+    ]
+  },
+  {
+    "path": ["componentsTree", "0", "methods", "getStatusText", "source"],
+    "matches": [
+      {
+        "range": {
+          "start": 465,
+          "end": 518
+        },
+        "text": "审核未通过：${this.state.value === 1 ? '姓名未通过' : '地址未通过'}",
+        "isString": true,
+        "key": "i18n-shen-he-wei-tong-guo"
+      },
+      {
+        "range": {
+          "start": 325,
+          "end": 329
+        },
+        "text": "进度",
+        "isString": true,
+        "key": "i18n-jin-du"
+      },
+      {
+        "range": {
+          "start": 301,
+          "end": 316
+        },
+        "text": "审核中（",
+        "isString": false,
+        "key": "i18n-shen-he-zhong"
+      },
+      {
+        "range": {
+          "start": 200,
+          "end": 223
+        },
+        "text": "激活失败：${record.reason}",
+        "isString": true,
+        "key": "i18n-ji-huo-shi-bai-r"
+      },
+      {
+        "range": {
+          "start": 126,
+          "end": 131
+        },
+        "text": "已激活",
+        "isString": true,
+        "key": "i18n-yi-ji-huo"
+      }
+    ]
+  },
+  {
+    "path": ["componentsTree", "0", "methods", "getStatusText", "value"],
+    "matches": [
+      {
+        "range": {
+          "start": 570,
+          "end": 623
+        },
+        "text": "审核未通过：${this.state.value === 1 ? '姓名未通过' : '地址未通过'}",
+        "isString": true,
+        "key": "i18n-shen-he-wei-tong-guo"
+      },
+      {
+        "range": {
+          "start": 423,
+          "end": 437
+        },
+        "text": "进度",
+        "isString": true,
+        "key": "i18n-jin-du"
+      },
+      {
+        "range": {
+          "start": 342,
+          "end": 368
+        },
+        "text": "审核中（",
+        "isString": true,
+        "key": "i18n-shen-he-zhong"
+      },
+      {
+        "range": {
+          "start": 200,
+          "end": 223
+        },
+        "text": "激活失败：${record.reason}",
+        "isString": true,
+        "key": "i18n-ji-huo-shi-bai-r"
+      },
+      {
+        "range": {
+          "start": 126,
+          "end": 131
+        },
+        "text": "已激活",
+        "isString": true,
+        "key": "i18n-yi-ji-huo"
+      }
+    ]
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "0",
+      "props",
+      "message"
+    ],
+    "text": "这是测试文案",
+    "isString": true,
+    "key": "i18n-zhe-shi-ce-shi-wen"
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "1",
+      "props",
+      "message"
+    ],
+    "text": "这是测试文案（开头重复）",
+    "isString": true,
+    "key": "i18n-zhe-shi-ce-shi-wen-2"
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "2",
+      "children",
+      "0",
+      "children",
+      "0",
+      "children",
+      "0",
+      "children",
+      "0",
+      "children",
+      "0",
+      "props",
+      "children"
+    ],
+    "text": "添加",
+    "isString": true,
+    "key": "i18n-tian-jia"
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "2",
+      "children",
+      "0",
+      "children",
+      "0",
+      "children",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "props",
+      "children"
+    ],
+    "text": "刷新",
+    "isString": true,
+    "key": "i18n-shua-xin"
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "2",
+      "children",
+      "0",
+      "children",
+      "0",
+      "children",
+      "0",
+      "children",
+      "0",
+      "children",
+      "2",
+      "props",
+      "placeholder"
+    ],
+    "text": "输入名称进行搜索",
+    "isString": true,
+    "key": "i18n-shu-ru-ming-cheng-jin"
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "2",
+      "children",
+      "1",
+      "children",
+      "0",
+      "props",
+      "columns",
+      "0",
+      "title"
+    ],
+    "text": "姓名",
+    "isString": true,
+    "key": "i18n-xing-ming"
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "2",
+      "children",
+      "1",
+      "children",
+      "0",
+      "props",
+      "columns",
+      "1",
+      "title"
+    ],
+    "text": "地址",
+    "isString": true,
+    "key": "i18n-di-zhi"
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "2",
+      "children",
+      "1",
+      "children",
+      "0",
+      "props",
+      "columns",
+      "2",
+      "title"
+    ],
+    "text": "状态",
+    "isString": true,
+    "key": "i18n-zhuang-tai"
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "2",
+      "children",
+      "1",
+      "children",
+      "0",
+      "props",
+      "columns",
+      "3",
+      "title"
+    ],
+    "text": "更新时间",
+    "isString": true,
+    "key": "i18n-geng-xin-shi-jian"
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "2",
+      "children",
+      "1",
+      "children",
+      "0",
+      "props",
+      "columns",
+      "4",
+      "title"
+    ],
+    "text": "操作",
+    "isString": true,
+    "key": "i18n-cao-zuo"
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "2",
+      "children",
+      "1",
+      "children",
+      "0",
+      "props",
+      "columns",
+      "4",
+      "render",
+      "value",
+      "0",
+      "children",
+      "0",
+      "props",
+      "children"
+    ],
+    "text": "详情",
+    "isString": true,
+    "key": "i18n-xiang-qing"
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "1",
+      "children",
+      "0",
+      "children",
+      "2",
+      "children",
+      "1",
+      "children",
+      "0",
+      "props",
+      "columns",
+      "4",
+      "render",
+      "value",
+      "0",
+      "children",
+      "1",
+      "props",
+      "children"
+    ],
+    "text": "编辑",
+    "isString": true,
+    "key": "i18n-bian-ji"
+  }
+]

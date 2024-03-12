@@ -1,0 +1,29 @@
+{
+  "buildOnSave": false,
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "outDir": "build",
+    "module": "esnext",
+    "target": "es6",
+    "jsx": "react",
+    "moduleResolution": "node",
+    "lib": ["es6", "dom"],
+    "paths": {
+      "@yuntijs/lowcode-i18n-extract": ["src"],
+      "@yuntijs/lowcode-i18n-extract/*": ["src/*"]
+    },
+    "sourceMap": true,
+    "allowJs": true,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
+  },
+  "exclude": ["node_modules", "build", "public"],
+  "include": ["src/*.ts", "src/*.tsx", "demo/*.tsx"]
+}
