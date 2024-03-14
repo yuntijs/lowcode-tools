@@ -17,7 +17,7 @@
 
 #### What's improved
 
-- **lowcode-i18n-extract**: I18n extract done ([0293f26](https://github.com/yuntijs/lowcode-tools/commit/0293f26))
+- **lowcode-i18n-extract**: I18n extract done ([f444b29](https://github.com/yuntijs/lowcode-tools/commit/f444b29))
 
 </details>
 

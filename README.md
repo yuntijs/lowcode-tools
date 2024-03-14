@@ -44,7 +44,7 @@ You can use Github Codespaces for online development:
 Or clone it for local development:
 
 ```bash
-git clone https://github.com/yunti-ui/lowcode-tools.git
+git clone https://github.com/yuntijs/lowcode-tools.git
 cd lowcode-tools
 pnpm install
 ```

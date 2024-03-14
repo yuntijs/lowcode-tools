@@ -8,7 +8,7 @@
     "yunti-ui",
     "tools"
   ],
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "build": "dumi build",
     "dev": "dumi dev",
