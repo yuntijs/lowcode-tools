@@ -2,7 +2,7 @@ import { defineConfig } from 'dumi';
 import { readdirSync } from 'fs';
 import { join } from 'path';
 
-const PUBLIC_PATH = '/lowcode-tools-public/';
+const PUBLIC_PATH = '/lowcode-tools/';
 const isProduction = process.env.NODE_ENV === 'production';
 
 const headPkgList: string[] = [];
