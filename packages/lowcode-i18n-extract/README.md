@@ -17,7 +17,8 @@ English ・ [简体中文](./README.zh-CN.md) ・ [Changelog](./CHANGELOG.md) ·
 [![][npm-downloads-shield]][npm-downloads-link]
 [![][github-releasedate-shield]][github-releasedate-link]
 [![][github-action-test-shield]][github-action-test-link]
-[![][github-action-release-shield]][github-action-release-link]<br/>
+[![codecov][codecov-shield]][codecov-link]<br/>
+[![][github-action-release-shield]][github-action-release-link]
 [![][github-contributors-shield]][github-contributors-link]
 [![][github-forks-shield]][github-forks-link]
 [![][github-stars-shield]][github-stars-link]
@@ -138,6 +139,8 @@ This project is [MIT](./LICENSE) licensed.
 <!-- [vercel-link]: https://ui.yuntijs.com -->
 
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
+[codecov-link]: https://codecov.io/gh/yuntijs/lowcode-tools
+[codecov-shield]: https://codecov.io/gh/yuntijs/lowcode-tools/graph/badge.svg?token=XVQEXR75U4
 [codespaces-link]: https://codespaces.new/yuntijs/lowcode-tools
 [codespaces-shield]: https://github.com/codespaces/badge.svg
 [contributors-contrib]: https://contrib.rocks/image?repo=yuntijs/lowcode-tools
