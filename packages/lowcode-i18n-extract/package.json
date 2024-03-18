@@ -1,6 +1,6 @@
 {
   "name": "@yuntijs/lowcode-i18n-extract",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "i18n extract tools for lowcode schema",
   "keywords": [
     "yuntijs",
