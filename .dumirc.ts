@@ -25,7 +25,7 @@ export default defineConfig({
   base: isProduction ? '/lowcode-tools/' : '/',
   resolve: {
     docDirs: ['docs'],
-    atomDirs: [{ type: 'lowcode-tools', dir: 'packages' }],
+    atomDirs: [{ type: 'packages', dir: 'packages' }],
   },
   favicons: [`${PUBLIC_PATH}img/favicon.ico`],
   publicPath: PUBLIC_PATH,

@@ -11,7 +11,7 @@
     "extract",
     "kiwi"
   ],
-  "homepage": "https://github.com/yuntijs/lowcode-tools",
+  "homepage": "https://yuntijs.github.io/lowcode-tools/packages/lowcode-i18n-extract",
   "bugs": {
     "url": "https://github.com/yuntijs/lowcode-tools/issues/new"
   },

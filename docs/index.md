@@ -10,6 +10,6 @@ hero:
 features:
   - emoji: 🚀
     title: i18n-extract
-    link: /lowcode-tools/lowcode-i18n-extract
+    link: /packages/lowcode-i18n-extract
     description: 国际化文案提取工具
 ---
