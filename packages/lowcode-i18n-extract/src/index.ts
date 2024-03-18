@@ -11,8 +11,6 @@ export interface ExtractI18nOptions {
   schemaFilter?: <T = IPublicTypePageSchema>(
     schema: IPublicTypeProjectSchema<T>
   ) => IPublicTypeProjectSchema<T>;
-  /** 批量提取文案时生成 key 值时的默认翻译源, 默认 Pinyin，可选 Pinyin/Google/Baidu/Bing */
-  defaultI18nKeyApi?: 'Pinyin' | 'Google' | 'Baidu' | 'Bing';
 }
 
 export const defaultSchemaFilter = <T = IPublicTypePageSchema>(

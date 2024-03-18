@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import { extractI18n } from '@yuntijs/lowcode-i18n-extract';
 import { MonacoEditor } from '@yuntijs/ui';
-import { Button, Flex } from 'antd';
+import { Button, Flex, Tabs } from 'antd';
 import React, { useState } from 'react';
 
 import schemaData from '../tests/data/schema.json';
@@ -9,11 +9,13 @@ import schemaData from '../tests/data/schema.json';
 const LowcodeI18nExtractDemo: React.FC = () => {
   const [schema, setSchema] = useState(JSON.stringify(schemaData, null, 2));
   const [schemaExtracted, setSchemaExtracted] = useState<string>();
+  const [matches, setMatches] = useState<string>();
   const onExtractI18nBtnClick = () => {
-    const { matches, schema: schemaWithI18n } = extractI18n(JSON.parse(schema));
-    console.log('matches =>', matches);
-    console.log('schemaWithI18n =>', schemaWithI18n);
-    setSchemaExtracted(JSON.stringify(schemaWithI18n, null, 2));
+    const results = extractI18n(JSON.parse(schema));
+    console.log('matches =>', results.matches);
+    console.log('schemaWithI18n =>', results.schema);
+    setSchemaExtracted(JSON.stringify(results.schema, null, 2));
+    setMatches(JSON.stringify(results.matches, null, 2));
   };
 
   return (
@@ -30,12 +32,36 @@ const LowcodeI18nExtractDemo: React.FC = () => {
         Extract I18n Texts
       </Button>
       <h3>Results:</h3>
-      <MonacoEditor
-        height={450}
-        language="json"
-        readOnly
-        supportFullScreen={true}
-        value={schemaExtracted}
+      <Tabs
+        defaultActiveKey="schema"
+        items={[
+          {
+            key: 'schema',
+            label: 'schema',
+            children: (
+              <MonacoEditor
+                height={450}
+                language="json"
+                readOnly
+                supportFullScreen={true}
+                value={schemaExtracted}
+              />
+            ),
+          },
+          {
+            key: 'matches',
+            label: 'maches',
+            children: (
+              <MonacoEditor
+                height={450}
+                language="json"
+                readOnly
+                supportFullScreen={true}
+                value={matches}
+              />
+            ),
+          },
+        ]}
       />
     </Flex>
   );

@@ -1,10 +1,10 @@
 ---
 hero:
   title: LowCode Tools
-  description: 云梯官方低码工具
+  description: 云梯官方低码工具集
   actions:
     - text: 立即上手
-      link: /lowcode-tools
+      link: /guide
     - text: GitHub
       link: https://github.com/yuntijs/lowcode-tools
 features:

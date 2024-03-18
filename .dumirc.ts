@@ -3,6 +3,7 @@ import { readdirSync } from 'fs';
 import { join } from 'path';
 
 const PUBLIC_PATH = '/lowcode-tools-public/';
+const isProduction = process.env.NODE_ENV === 'production';
 
 const headPkgList: string[] = [];
 const pkgDirList = readdirSync(join(__dirname, 'packages')).filter(
@@ -21,18 +22,17 @@ export const alias = pkgDirList.reduce((pre, name) => {
 export default defineConfig({
   alias,
   // autoAlias: true,
+  base: isProduction ? '/lowcode-tools/' : '/',
   resolve: {
     docDirs: ['docs'],
     atomDirs: [{ type: 'lowcode-tools', dir: 'packages' }],
   },
   favicons: [`${PUBLIC_PATH}img/favicon.ico`],
   publicPath: PUBLIC_PATH,
+  outputPath: `./dist${PUBLIC_PATH}`,
   themeConfig: {
     logo: `${PUBLIC_PATH}img/logo.svg`,
-    nav: [
-      { title: '开发指南', link: '/guide' },
-      { title: '组件总览', link: '/lowcode-tools/overview' },
-    ],
+    nav: [{ title: '开发指南', link: '/guide' }],
   },
   ignoreMomentLocale: true,
   mfsu: {

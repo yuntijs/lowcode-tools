@@ -4,7 +4,7 @@
 
 <h1>Yunti Lowcode I18n Extract Tools</h1>
 
-🌐 @yuntijs/lowcode-i18n-extract is an i18n extract tools for lowcode schema and inspired by [Kiwi](https://github.com/alibaba/kiwi).
+🌐 [@yuntijs/lowcode-i18n-extract](https://www.npmjs.com/package/@yuntijs/lowcode-i18n-extract) is an i18n extract tools for schema of [lowcode engine](https://lowcode-engine.cn/index) inspired by [Kiwi](https://github.com/alibaba/kiwi).
 
 English ・ [简体中文](./README.zh-CN.md) ・ [Changelog](./CHANGELOG.md) · [Report Bug][github-issues-link] · [Request Feature][github-issues-link]
 
@@ -77,6 +77,8 @@ const schema = {
 };
 
 const { matches, schema: schemaWithI18n } = extractI18n(schema);
+// matches are extracted i18n texts
+// schemaWithI18n is scheam with i18n injected
 ```
 
 <div align="right">

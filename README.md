@@ -59,7 +59,7 @@ pnpm install
 
 Contributions of all types are more than welcome, if you are interested in contributing code, feel free to check out our GitHub [Issues][github-issues-link] to get stuck in to show us what you’re made of.
 
-\[!\[]\[pr-welcome-shield]]\[pr-welcome-link]
+[![][pr-welcome-shield]][pr-welcome-link]
 
 [![][github-contrib-shield]][github-contrib-link]
 
@@ -103,3 +103,5 @@ This project is [MIT](./LICENSE) licensed.
 [i18n-extract-github]: https://github.com/yuntijs/lowcode-tools/tree/master/packages/lowcode-i18n-extract/README.md
 [i18n-extract-shield]: https://img.shields.io/npm/v/@yuntijs/lowcode-i18n-extract?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
 [i18n-extract-url]: https://www.npmjs.com/package/@yuntijs/lowcode-i18n-extract
+[pr-welcome-link]: https://github.com/yuntijs/lowcode-tools/pulls
+[pr-welcome-shield]: https://img.shields.io/badge/☁️_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge

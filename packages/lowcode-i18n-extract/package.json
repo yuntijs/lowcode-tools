@@ -5,8 +5,20 @@
   "keywords": [
     "yuntijs",
     "lowcode",
-    "i18n"
+    "low-code",
+    "low-code engine",
+    "i18n",
+    "extract",
+    "kiwi"
   ],
+  "homepage": "https://github.com/yuntijs/lowcode-tools",
+  "bugs": {
+    "url": "https://github.com/yuntijs/lowcode-tools/issues/new"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuntijs/lowcode-tools.git"
+  },
   "license": "MIT",
   "module": "dist/es/index.js",
   "types": "dist/es/index.d.ts",

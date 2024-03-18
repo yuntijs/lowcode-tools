@@ -178,10 +178,7 @@
                     "bold": true,
                     "level": 1,
                     "bordered": false,
-                    "children": {
-                      "key": "i18n-s7vniwvk",
-                      "type": "i18n"
-                    },
+                    "children": "国际化文案提取测试",
                     "ellipsis": true,
                     "__component_name": "Typography.Title"
                   },
