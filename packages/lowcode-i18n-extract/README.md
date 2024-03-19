@@ -140,7 +140,7 @@ This project is [MIT](./LICENSE) licensed.
 
 [back-to-top]: https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square
 [codecov-link]: https://codecov.io/gh/yuntijs/lowcode-tools
-[codecov-shield]: https://codecov.io/gh/yuntijs/lowcode-tools/graph/badge.svg?token=XVQEXR75U4
+[codecov-shield]: https://img.shields.io/codecov/c/github/yuntijs/lowcode-tools?token=XVQEXR75U4&style=flat-square&logo=Codecov&logoColor=white&labelColor=black&color=4c1
 [codespaces-link]: https://codespaces.new/yuntijs/lowcode-tools
 [codespaces-shield]: https://github.com/codespaces/badge.svg
 [contributors-contrib]: https://contrib.rocks/image?repo=yuntijs/lowcode-tools
@@ -148,9 +148,9 @@ This project is [MIT](./LICENSE) licensed.
 [fossa-license-link]: https://app.fossa.com/projects/git%2Bgithub.com%2Fyuntijs%2Flowcode-tools
 [fossa-license-shield]: https://app.fossa.com/api/projects/git%2Bgithub.com%2Fyuntijs%2Flowcode-tools.svg?type=large
 [github-action-release-link]: https://github.com/actions/workflows/yuntijs/lowcode-tools/release.yml
-[github-action-release-shield]: https://img.shields.io/github/actions/workflow/status/yuntijs/lowcode-tools/release.yml?label=release&labelColor=black&logo=githubactions&logoColor=white&style=flat-square
+[github-action-release-shield]: https://img.shields.io/github/actions/workflow/status/yuntijs/lowcode-tools/release.yml?label=release&labelColor=black&logo=semanticrelease&logoColor=white&style=flat-square
 [github-action-test-link]: https://github.com/actions/workflows/yuntijs/lowcode-tools/test-i18n-extract.yml
-[github-action-test-shield]: https://img.shields.io/github/actions/workflow/status/yuntijs/lowcode-tools/test-i18n-extract.yml?label=test&labelColor=black&logo=githubactions&logoColor=white&style=flat-square
+[github-action-test-shield]: https://img.shields.io/github/actions/workflow/status/yuntijs/lowcode-tools/test-i18n-extract.yml?label=test&labelColor=black&logo=jest&logoColor=white&style=flat-square
 [github-contributors-link]: https://github.com/yuntijs/lowcode-tools/graphs/contributors
 [github-contributors-shield]: https://img.shields.io/github/contributors/yuntijs/lowcode-tools?color=c4f042&labelColor=black&style=flat-square
 [github-forks-link]: https://github.com/yuntijs/lowcode-tools/network/members
