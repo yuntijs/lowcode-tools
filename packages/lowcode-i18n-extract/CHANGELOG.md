@@ -2,6 +2,31 @@
 
 # Changelog
 
+### [Version 1.1.1](https://github.com/yuntijs/lowcode-tools/compare/@yuntijs/lowcode-i18n-extract@1.1.0...@yuntijs/lowcode-i18n-extract@1.1.1)
+
+<sup>Released on **2024-03-19**</sup>
+
+#### 🐛 Bug Fixes
+
+- **lowcode-i18n-extract**: Fix RegExp test and function i18n var inject issues.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **lowcode-i18n-extract**: Fix RegExp test and function i18n var inject issues ([7c9e8e7](https://github.com/yuntijs/lowcode-tools/commit/7c9e8e7))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ## [Version 1.1.0](https://github.com/yuntijs/lowcode-tools/compare/@yuntijs/lowcode-i18n-extract@1.0.0...@yuntijs/lowcode-i18n-extract@1.1.0)
 
 <sup>Released on **2024-03-18**</sup>
