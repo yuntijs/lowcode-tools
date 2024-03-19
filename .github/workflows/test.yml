@@ -24,12 +24,14 @@ jobs:
       - name: Install deps
         run: pnpm i
 
-      - name: Test
-        run: cd packages/lowcode-i18n-extract && npm run test:cov
+      - name: Test lowcode-i18n-extract
+        working-directory: packages/lowcode-i18n-extract
+        run: npm run test:cov
 
-      - name: Upload coverage to Codecov
+      - name: Upload coverage of lowcode-i18n-extract to Codecov
         uses: codecov/codecov-action@v3
         with:
           token: ${{ secrets.CODECOV_TOKEN }}
           slug: yuntijs/lowcode-tools
+          flags: lowcode-i18n-extract
           directory: ./packages/lowcode-i18n-extract/coverage/
