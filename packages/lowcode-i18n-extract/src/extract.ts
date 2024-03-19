@@ -1,3 +1,4 @@
+/* eslint-disable unicorn/prefer-regexp-test */
 import { IPublicTypePageSchema, IPublicTypeProjectSchema } from '@alilc/lowcode-types';
 import * as babelParser from '@babel/parser';
 import * as babelTraverse from '@babel/traverse';
@@ -35,7 +36,11 @@ function findTextInJs(code: string, type: string, path: string[]) {
   babelTraverse.default(ast, {
     StringLiteral({ node }) {
       const { start, end, value } = node as babelTypes.StringLiteral;
-      if (value && DOUBLE_BYTE_REGEX.test(value)) {
+      // 注意这里不能是用 `DOUBLE_BYTE_REGEX.test()`，如果正则表达式设置了全局标志 `g`，
+      // `test()` 的执行会改变正则表达式 `lastIndex` 属性。连续的执行 `test` 方法，
+      // 后续的执行将会从 `lastIndex` 处开始匹配字符串，(`exec()` 同样改变正则本身的 `lastIndex` 属性值)
+      // 详见 https://yi-love.github.io/articles/regexp-test
+      if (value && value.match(DOUBLE_BYTE_REGEX)) {
         const range = { start: start - offset, end: end - offset };
         jsMatches.matches.push({
           range,
@@ -47,7 +52,7 @@ function findTextInJs(code: string, type: string, path: string[]) {
     TemplateLiteral({ node }) {
       const { start, end } = node as babelTypes.TemplateLiteral;
       const templateContent = fixedCode.slice(start, end);
-      if (DOUBLE_BYTE_REGEX.test(templateContent)) {
+      if (templateContent.match(DOUBLE_BYTE_REGEX)) {
         const range = { start: start - offset, end: end - offset };
         jsMatches.matches.push({
           range,
@@ -62,7 +67,7 @@ function findTextInJs(code: string, type: string, path: string[]) {
         if (babelTypes.isJSXText(child)) {
           const { value, start, end } = child;
           const range = { start: start - offset, end: end - offset };
-          if (DOUBLE_BYTE_REGEX.test(value)) {
+          if (value.match(DOUBLE_BYTE_REGEX)) {
             jsMatches.matches.push({
               range,
               text: value.trim(),
@@ -96,6 +101,9 @@ const findI18n = (obj: Record<string, any>, path: string[] = [], matches: I18nMa
             if (jsMatches.matches.length === 0) {
               continue;
             }
+            // 调整文案顺序，保证从后面的文案往前替换，避免位置更新导致替换出错
+            jsMatches.matches = sortBy(jsMatches.matches, match => -match.range.start);
+            matches.push(jsMatches);
             // 需要对 methods 中的 source 进行特殊处理
             if (value.source) {
               const sourceJsMatches = findTextInJs(value.source, value.type, [
@@ -108,9 +116,6 @@ const findI18n = (obj: Record<string, any>, path: string[] = [], matches: I18nMa
               );
               matches.push(sourceJsMatches);
             }
-            // 调整文案顺序，保证从后面的文案往前替换，避免位置更新导致替换出错
-            jsMatches.matches = sortBy(jsMatches.matches, match => -match.range.start);
-            matches.push(jsMatches);
           } catch (error) {
             console.warn(`parse '${newPath.join(' > ')}' failed, code is: ${value.value}`, error);
           }
@@ -133,7 +138,7 @@ const findI18n = (obj: Record<string, any>, path: string[] = [], matches: I18nMa
       findI18n(value, newPath, matches);
       continue;
     }
-    if (valueType === 'string' && DOUBLE_BYTE_REGEX.test(value)) {
+    if (valueType === 'string' && value.match(DOUBLE_BYTE_REGEX)) {
       matches.push({
         path: newPath,
         text: value,

@@ -35,5 +35,5 @@ test('extract chinese text to i18n from schema', async () => {
   );
 
   // Assert 断言测试结果
-  expect(matches.length).toBe(17);
+  expect(matches.length).toBe(19);
 });
