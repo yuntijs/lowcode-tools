@@ -19,6 +19,14 @@
     {
       "package": "@tenx-ui/materials",
       "version": "1.5.32",
+      "exportName": "Alert",
+      "destructuring": true,
+      "subName": "",
+      "componentName": "Alert"
+    },
+    {
+      "package": "@tenx-ui/materials",
+      "version": "1.5.32",
       "exportName": "Button",
       "destructuring": true,
       "subName": "",
@@ -95,14 +103,6 @@
       "destructuring": true,
       "subName": "",
       "componentName": "Page"
-    },
-    {
-      "package": "@tenx-ui/materials",
-      "version": "1.5.32",
-      "exportName": "Alert",
-      "destructuring": true,
-      "subName": "",
-      "componentName": "Alert"
     }
   ],
   "componentsTree": [
@@ -110,12 +110,12 @@
       "componentName": "Page",
       "id": "page-kww7j",
       "props": {},
-      "docId": "docltnxqm9h",
       "css": "body {\n  font-size: 12px;\n}",
       "meta": {
         "title": "国际化文案提取测试",
         "router": "/i18n-extract"
       },
+      "docId": "docltnxqm9h",
       "title": "",
       "hidden": false,
       "fileName": "I18nExtract",
@@ -133,6 +133,11 @@
           "type": "JSFunction",
           "value": "function paginationShowTotal(total, range) {\n  const __I18N = this.i18n;\n\n  return __I18N('i18n-gong-tota', { val1: total });\n}",
           "source": "function paginationShowTotal(total, range) {\n  const __I18N = this.i18n;\n\n  return __I18N('i18n-gong-tota', { val1: total });\n}"
+        },
+        "getHelloWorldText": {
+          "type": "JSFunction",
+          "value": "function getHelloWorldText() {\n  const __I18N = this.i18n;\n\n  // 测试新增中文文案的提取\n  const name = __I18N('i18n-xu-li');\n  return __I18N('i18n-ni-hao-nam', {\n    val1: name\n  });\n}",
+          "source": "function getHelloWorldText() {\n  const __I18N = this.i18n;\n\n  // 测试新增中文文案的提取\n  const name = __I18N('i18n-xu-li');\n  return __I18N('i18n-ni-hao-nam', {\n    val1: name\n  });\n}"
         },
         "getStatusText": {
           "type": "JSFunction",
@@ -178,7 +183,7 @@
                     "level": 1,
                     "bordered": false,
                     "children": {
-                      "key": "i18n-s7vniwvk",
+                      "key": "i18n-guo-ji-hua-wen-an",
                       "type": "i18n"
                     },
                     "ellipsis": true,
@@ -234,16 +239,16 @@
                       "componentName": "Alert",
                       "id": "node_oclto0j15r1",
                       "props": {
+                        "type": "success",
                         "message": {
                           "key": "i18n-zhe-shi-ce-shi-wen",
                           "type": "i18n"
                         },
-                        "__component_name": "Alert",
-                        "type": "success",
-                        "showIcon": true
+                        "showIcon": true,
+                        "__component_name": "Alert"
                       },
-                      "hidden": false,
                       "title": "",
+                      "hidden": false,
                       "isLocked": false,
                       "condition": true,
                       "conditionGroup": ""
@@ -252,16 +257,35 @@
                       "componentName": "Alert",
                       "id": "node_oclto0j15r2",
                       "props": {
+                        "type": "success",
                         "message": {
                           "key": "i18n-zhe-shi-ce-shi-wen-2",
                           "type": "i18n"
                         },
-                        "__component_name": "Alert",
-                        "type": "success",
-                        "showIcon": true
+                        "showIcon": true,
+                        "__component_name": "Alert"
                       },
-                      "hidden": false,
                       "title": "",
+                      "hidden": false,
+                      "isLocked": false,
+                      "condition": true,
+                      "conditionGroup": ""
+                    },
+                    {
+                      "componentName": "Alert",
+                      "id": "node_ocltxy0e3h1",
+                      "props": {
+                        "type": "success",
+                        "message": {
+                          "type": "JSExpression",
+                          "value": "this.getHelloWorldText()"
+                        },
+                        "showIcon": true,
+                        "__component_name": "Alert",
+                        "_unsafe_MixedSetter_message_select": "VariableSetter"
+                      },
+                      "title": "",
+                      "hidden": false,
                       "isLocked": false,
                       "condition": true,
                       "conditionGroup": ""
@@ -376,14 +400,14 @@
                                             "shape": "default",
                                             "danger": false,
                                             "__events": {
-                                              "eventDataList": [],
                                               "eventList": [
                                                 {
                                                   "name": "onClick",
-                                                  "template": "onClick(event,${extParams}){\n// 点击按钮时的回调\nconsole.log('onClick', event);}",
-                                                  "disabled": true
+                                                  "disabled": true,
+                                                  "template": "onClick(event,${extParams}){\n// 点击按钮时的回调\nconsole.log('onClick', event);}"
                                                 }
-                                              ]
+                                              ],
+                                              "eventDataList": []
                                             },
                                             "children": {
                                               "key": "i18n-shua-xin",
@@ -407,49 +431,49 @@
                                               "width": "240px"
                                             },
                                             "__events": {
-                                              "eventDataList": [],
                                               "eventList": [
                                                 {
                                                   "name": "onChange",
-                                                  "template": "onChange(event,${extParams}){\n// 输入框内容变化时的回调\nconsole.log('onChange',event);}",
-                                                  "disabled": false
+                                                  "disabled": false,
+                                                  "template": "onChange(event,${extParams}){\n// 输入框内容变化时的回调\nconsole.log('onChange',event);}"
                                                 },
                                                 {
                                                   "name": "onPressEnter",
-                                                  "template": "onPressEnter(event,${extParams}){\n// 按下回车的回调\nconsole.log('onPressEnter',event);}",
-                                                  "disabled": false
+                                                  "disabled": false,
+                                                  "template": "onPressEnter(event,${extParams}){\n// 按下回车的回调\nconsole.log('onPressEnter',event);}"
                                                 },
                                                 {
                                                   "name": "onSearch",
-                                                  "template": "onSearch(value,event,${extParams}){\n// 点击搜索图标、清除图标，或按下回车键时的回调\nconsole.log('onSearch',value,event);}",
-                                                  "disabled": true
+                                                  "disabled": true,
+                                                  "template": "onSearch(value,event,${extParams}){\n// 点击搜索图标、清除图标，或按下回车键时的回调\nconsole.log('onSearch',value,event);}"
                                                 },
                                                 {
                                                   "name": "onFocus",
-                                                  "template": "onFocus(event,${extParams}){\n// 获取焦点回调\nconsole.log('onFocus',event);}",
-                                                  "disabled": false
+                                                  "disabled": false,
+                                                  "template": "onFocus(event,${extParams}){\n// 获取焦点回调\nconsole.log('onFocus',event);}"
                                                 },
                                                 {
                                                   "name": "onKeyDown",
-                                                  "template": "onKeyDown(event,${extParams}){\n// 按键按下时的回调\nconsole.log('onKeyDown',event);}",
-                                                  "disabled": false
+                                                  "disabled": false,
+                                                  "template": "onKeyDown(event,${extParams}){\n// 按键按下时的回调\nconsole.log('onKeyDown',event);}"
                                                 },
                                                 {
                                                   "name": "onKeyPress",
-                                                  "template": "onKeyPress(event,${extParams}){\n// 按键按下后的回调\nconsole.log('onKeyPress',event);}",
-                                                  "disabled": false
+                                                  "disabled": false,
+                                                  "template": "onKeyPress(event,${extParams}){\n// 按键按下后的回调\nconsole.log('onKeyPress',event);}"
                                                 },
                                                 {
                                                   "name": "onKeyUp",
-                                                  "template": "onKeyUp(event,${extParams}){\n// 按键释放回调\nconsole.log('onKeyUp',event);}",
-                                                  "disabled": false
+                                                  "disabled": false,
+                                                  "template": "onKeyUp(event,${extParams}){\n// 按键释放回调\nconsole.log('onKeyUp',event);}"
                                                 },
                                                 {
                                                   "name": "onBlur",
-                                                  "template": "onBlur(event,${extParams}){\n// 按键释放回调\nconsole.log('onBlur',event);}",
-                                                  "disabled": false
+                                                  "disabled": false,
+                                                  "template": "onBlur(event,${extParams}){\n// 按键释放回调\nconsole.log('onBlur',event);}"
                                                 }
-                                              ]
+                                              ],
+                                              "eventDataList": []
                                             },
                                             "placeholder": {
                                               "key": "i18n-shu-ru-ming-cheng-jin",
@@ -600,10 +624,10 @@
                                       "key": "i18n-di-zhi",
                                       "type": "i18n"
                                     },
-                                    "dataIndex": "address",
                                     "ellipsis": {
                                       "showTitle": true
-                                    }
+                                    },
+                                    "dataIndex": "address"
                                   },
                                   {
                                     "key": "status",
@@ -620,9 +644,9 @@
                                           "id": "node_ocltnxqx9j2",
                                           "props": {
                                             "id": {
+                                              "mock": "",
                                               "type": "JSExpression",
-                                              "value": "this.text",
-                                              "mock": ""
+                                              "value": "this.text"
                                             },
                                             "types": {
                                               "type": "JSExpression",
@@ -780,34 +804,34 @@
                                   }
                                 ],
                                 "__events": {
-                                  "eventDataList": [],
                                   "eventList": [
                                     {
                                       "name": "onChange",
-                                      "template": "onChange(pagination,filters,sorter,extra,${extParams}){\n// 表格翻页事件\nconsole.log('onChange', pagination);}",
-                                      "disabled": true
+                                      "disabled": true,
+                                      "template": "onChange(pagination,filters,sorter,extra,${extParams}){\n// 表格翻页事件\nconsole.log('onChange', pagination);}"
                                     },
                                     {
                                       "name": "rowSelection.onChange",
-                                      "template": "onRowSelectionChange(selectedRowKeys,selectedRows,${extParams}){\n// 选中项发生变化时的回调\nconsole.log('onRowSelectionChange', selectedRowKeys, selectedRows);}",
-                                      "disabled": false
+                                      "disabled": false,
+                                      "template": "onRowSelectionChange(selectedRowKeys,selectedRows,${extParams}){\n// 选中项发生变化时的回调\nconsole.log('onRowSelectionChange', selectedRowKeys, selectedRows);}"
                                     },
                                     {
                                       "name": "expandable.onExpand",
-                                      "template": "onExpandableExpand(expanded,record){\n// 点击展开图标时触发\nconsole.log('onRowSelectionChange', expanded, record);}",
-                                      "disabled": false
+                                      "disabled": false,
+                                      "template": "onExpandableExpand(expanded,record){\n// 点击展开图标时触发\nconsole.log('onRowSelectionChange', expanded, record);}"
                                     },
                                     {
                                       "name": "pagination.onChange",
-                                      "template": "onPaginationChange(page, pageSize){\n// 页码或 pageSize 改变的回调  \nconsole.log('onPaginationChange', page, pageSize);}",
-                                      "disabled": false
+                                      "disabled": false,
+                                      "template": "onPaginationChange(page, pageSize){\n// 页码或 pageSize 改变的回调  \nconsole.log('onPaginationChange', page, pageSize);}"
                                     },
                                     {
                                       "name": "pagination.onShowSizeChange",
-                                      "template": "onPaginationShowSizeChange(current, size){\n// pageSize 变化的回调\nconsole.log('onPaginationShowSizeChange', current, size);}",
-                                      "disabled": false
+                                      "disabled": false,
+                                      "template": "onPaginationShowSizeChange(current, size){\n// pageSize 变化的回调\nconsole.log('onPaginationShowSizeChange', current, size);}"
                                     }
-                                  ]
+                                  ],
+                                  "eventDataList": []
                                 },
                                 "dataSource": [
                                   {
@@ -914,7 +938,6 @@
       "mock": "false",
       "type": "JSExpression",
       "value": "process.env.NODE_ENV === 'production'",
-      "builtin": true,
       "description": "是否为生产环境"
     },
     "basename": {
@@ -933,12 +956,15 @@
   },
   "i18n": {
     "en-US": {
+      "i18n-ni-hao-nam": "Hello, {val1}",
       "i18n-gong-tota": "共{val1}条",
+      "i18n-xu-li": "絮黎",
       "i18n-shen-he-wei-tong-guo": "审核未通过：{val1}",
       "i18n-jin-du": "进度",
       "i18n-shen-he-zhong": "审核中（",
       "i18n-ji-huo-shi-bai-r": "激活失败：{val1}",
       "i18n-yi-ji-huo": "已激活",
+      "i18n-guo-ji-hua-wen-an": "国际化文案提取测试",
       "i18n-zhe-shi-ce-shi-wen": "这是测试文案",
       "i18n-zhe-shi-ce-shi-wen-2": "这是测试文案（开头重复）",
       "i18n-tian-jia": "添加",
@@ -953,12 +979,15 @@
       "i18n-bian-ji": "编辑"
     },
     "zh-CN": {
+      "i18n-ni-hao-nam": "你好，{val1}",
       "i18n-gong-tota": "共{val1}条",
+      "i18n-xu-li": "絮黎",
       "i18n-shen-he-wei-tong-guo": "审核未通过：{val1}",
       "i18n-jin-du": "进度",
       "i18n-shen-he-zhong": "审核中（",
       "i18n-ji-huo-shi-bai-r": "激活失败：{val1}",
       "i18n-yi-ji-huo": "已激活",
+      "i18n-guo-ji-hua-wen-an": "国际化文案提取测试",
       "i18n-zhe-shi-ce-shi-wen": "这是测试文案",
       "i18n-zhe-shi-ce-shi-wen-2": "这是测试文案（开头重复）",
       "i18n-tian-jia": "添加",
@@ -978,10 +1007,7 @@
     "version": "0.1.2",
     "basename": "/hello-world",
     "namespace": "hello-world",
-    "description": "cs",
-    "lowCode": {
-      "packages": []
-    }
+    "description": "cs"
   },
   "utils": [
     {

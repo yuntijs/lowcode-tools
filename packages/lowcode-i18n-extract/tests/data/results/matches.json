@@ -1,19 +1,5 @@
 [
   {
-    "path": ["componentsTree", "0", "methods", "paginationShowTotal", "source"],
-    "matches": [
-      {
-        "range": {
-          "start": 54,
-          "end": 66
-        },
-        "text": "共${total}条",
-        "isString": true,
-        "key": "i18n-gong-tota"
-      }
-    ]
-  },
-  {
     "path": ["componentsTree", "0", "methods", "paginationShowTotal", "value"],
     "matches": [
       {
@@ -28,52 +14,44 @@
     ]
   },
   {
-    "path": ["componentsTree", "0", "methods", "getStatusText", "source"],
+    "path": ["componentsTree", "0", "methods", "paginationShowTotal", "source"],
     "matches": [
       {
         "range": {
-          "start": 465,
-          "end": 518
+          "start": 54,
+          "end": 66
         },
-        "text": "审核未通过：${this.state.value === 1 ? '姓名未通过' : '地址未通过'}",
+        "text": "共${total}条",
         "isString": true,
-        "key": "i18n-shen-he-wei-tong-guo"
-      },
+        "key": "i18n-gong-tota"
+      }
+    ]
+  },
+  {
+    "path": ["componentsTree", "0", "methods", "getHelloWorldText", "value"],
+    "matches": [
       {
         "range": {
-          "start": 325,
-          "end": 329
+          "start": 92,
+          "end": 96
         },
-        "text": "进度",
+        "text": "絮黎",
         "isString": true,
-        "key": "i18n-jin-du"
-      },
+        "key": "i18n-xu-li"
+      }
+    ]
+  },
+  {
+    "path": ["componentsTree", "0", "methods", "getHelloWorldText", "source"],
+    "matches": [
       {
         "range": {
-          "start": 301,
-          "end": 316
+          "start": 92,
+          "end": 96
         },
-        "text": "审核中（",
-        "isString": false,
-        "key": "i18n-shen-he-zhong"
-      },
-      {
-        "range": {
-          "start": 200,
-          "end": 223
-        },
-        "text": "激活失败：${record.reason}",
+        "text": "絮黎",
         "isString": true,
-        "key": "i18n-ji-huo-shi-bai-r"
-      },
-      {
-        "range": {
-          "start": 126,
-          "end": 131
-        },
-        "text": "已激活",
-        "isString": true,
-        "key": "i18n-yi-ji-huo"
+        "key": "i18n-xu-li"
       }
     ]
   },
@@ -128,6 +106,73 @@
     ]
   },
   {
+    "path": ["componentsTree", "0", "methods", "getStatusText", "source"],
+    "matches": [
+      {
+        "range": {
+          "start": 465,
+          "end": 518
+        },
+        "text": "审核未通过：${this.state.value === 1 ? '姓名未通过' : '地址未通过'}",
+        "isString": true,
+        "key": "i18n-shen-he-wei-tong-guo"
+      },
+      {
+        "range": {
+          "start": 325,
+          "end": 329
+        },
+        "text": "进度",
+        "isString": true,
+        "key": "i18n-jin-du"
+      },
+      {
+        "range": {
+          "start": 301,
+          "end": 316
+        },
+        "text": "审核中（",
+        "isString": false,
+        "key": "i18n-shen-he-zhong"
+      },
+      {
+        "range": {
+          "start": 200,
+          "end": 223
+        },
+        "text": "激活失败：${record.reason}",
+        "isString": true,
+        "key": "i18n-ji-huo-shi-bai-r"
+      },
+      {
+        "range": {
+          "start": 126,
+          "end": 131
+        },
+        "text": "已激活",
+        "isString": true,
+        "key": "i18n-yi-ji-huo"
+      }
+    ]
+  },
+  {
+    "path": [
+      "componentsTree",
+      "0",
+      "children",
+      "0",
+      "children",
+      "0",
+      "children",
+      "0",
+      "props",
+      "children"
+    ],
+    "text": "国际化文案提取测试",
+    "isString": true,
+    "key": "i18n-guo-ji-hua-wen-an"
+  },
+  {
     "path": [
       "componentsTree",
       "0",
@@ -176,7 +221,7 @@
       "children",
       "0",
       "children",
-      "2",
+      "3",
       "children",
       "0",
       "children",
@@ -205,7 +250,7 @@
       "children",
       "0",
       "children",
-      "2",
+      "3",
       "children",
       "0",
       "children",
@@ -234,7 +279,7 @@
       "children",
       "0",
       "children",
-      "2",
+      "3",
       "children",
       "0",
       "children",
@@ -263,7 +308,7 @@
       "children",
       "0",
       "children",
-      "2",
+      "3",
       "children",
       "1",
       "children",
@@ -288,7 +333,7 @@
       "children",
       "0",
       "children",
-      "2",
+      "3",
       "children",
       "1",
       "children",
@@ -313,7 +358,7 @@
       "children",
       "0",
       "children",
-      "2",
+      "3",
       "children",
       "1",
       "children",
@@ -338,7 +383,7 @@
       "children",
       "0",
       "children",
-      "2",
+      "3",
       "children",
       "1",
       "children",
@@ -363,7 +408,7 @@
       "children",
       "0",
       "children",
-      "2",
+      "3",
       "children",
       "1",
       "children",
@@ -388,7 +433,7 @@
       "children",
       "0",
       "children",
-      "2",
+      "3",
       "children",
       "1",
       "children",
@@ -419,7 +464,7 @@
       "children",
       "0",
       "children",
-      "2",
+      "3",
       "children",
       "1",
       "children",

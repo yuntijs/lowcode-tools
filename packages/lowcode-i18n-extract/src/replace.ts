@@ -105,9 +105,11 @@ export const replaceAndUpdateJsCode = (matches: I18nMatch[], jsCode: string, typ
     newCode = code;
     i18nRecords[match.key] = text;
   }
-  // 函数类型的 code 在函数体首行增加 i18n 函数变量声明，可以避免一些 this 指向引起的 i18n 无法获取的问题
-  if (IS_ADD_I18N_VAR) {
-    newCode = newCode.replace(JS_FUNCTION_PREFIX_REG, `$1\n  const __I18N = this.i18n;\n`);
+  const I18N_VAR_EXPRESSION = 'const __I18N = this.i18n;';
+  // 函数类型的 code 在函数体首行增加 __I18N 函数变量声明，可以避免一些 this 指向引起的 i18n 无法获取的问题
+  // 需要判断函数体内部是否已经添加过 __I18N 变量，避免重复添加
+  if (IS_ADD_I18N_VAR && !newCode.includes(I18N_VAR_EXPRESSION)) {
+    newCode = newCode.replace(JS_FUNCTION_PREFIX_REG, `$1\n  ${I18N_VAR_EXPRESSION}\n`);
   }
   return {
     code: newCode,
