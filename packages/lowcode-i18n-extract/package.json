@@ -20,6 +20,7 @@
     "url": "https://github.com/yuntijs/lowcode-tools.git"
   },
   "license": "MIT",
+  "main": "dist/cjs/index.js",
   "module": "dist/es/index.js",
   "types": "dist/es/index.d.ts",
   "files": [

@@ -36,7 +36,7 @@ function findTextInJs(code: string, type: string, path: string[]) {
   babelTraverse.default(ast, {
     StringLiteral({ node }) {
       const { start, end, value } = node as babelTypes.StringLiteral;
-      // 注意这里不能是用 `DOUBLE_BYTE_REGEX.test()`，如果正则表达式设置了全局标志 `g`，
+      // 注意这里不能使用 `DOUBLE_BYTE_REGEX.test()`，如果正则表达式设置了全局标志 `g`，
       // `test()` 的执行会改变正则表达式 `lastIndex` 属性。连续的执行 `test` 方法，
       // 后续的执行将会从 `lastIndex` 处开始匹配字符串，(`exec()` 同样改变正则本身的 `lastIndex` 属性值)
       // 详见 https://yi-love.github.io/articles/regexp-test

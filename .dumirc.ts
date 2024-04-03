@@ -22,7 +22,7 @@ export const alias = pkgDirList.reduce((pre, name) => {
 export default defineConfig({
   alias,
   // autoAlias: true,
-  base: isProduction ? '/lowcode-tools/' : '/',
+  base: isProduction ? PUBLIC_PATH : '/',
   resolve: {
     docDirs: ['docs'],
     atomDirs: [{ type: 'packages', dir: 'packages' }],
