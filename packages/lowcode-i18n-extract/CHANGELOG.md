@@ -2,6 +2,31 @@
 
 # Changelog
 
+### [Version 1.1.2](https://github.com/yuntijs/lowcode-tools/compare/@yuntijs/lowcode-i18n-extract@1.1.1...@yuntijs/lowcode-i18n-extract@1.1.2)
+
+<sup>Released on **2024-04-03**</sup>
+
+#### 🐛 Bug Fixes
+
+- **i18n-extract**: Add main filed for cjs.
+
+<br/>
+
+<details>
+<summary><kbd>Improvements and Fixes</kbd></summary>
+
+#### What's fixed
+
+- **i18n-extract**: Add main filed for cjs ([c1b7a51](https://github.com/yuntijs/lowcode-tools/commit/c1b7a51))
+
+</details>
+
+<div align="right">
+
+[![](https://img.shields.io/badge/-BACK_TO_TOP-151515?style=flat-square)](#readme-top)
+
+</div>
+
 ### [Version 1.1.1](https://github.com/yuntijs/lowcode-tools/compare/@yuntijs/lowcode-i18n-extract@1.1.0...@yuntijs/lowcode-i18n-extract@1.1.1)
 
 <sup>Released on **2024-03-19**</sup>
