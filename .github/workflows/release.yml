@@ -54,3 +54,4 @@ jobs:
         run: |
           npm install -g cnpm
           cnpm sync @yuntijs/lowcode-i18n-extract
+          cnpm sync @yuntijs/lowcode-materails-init

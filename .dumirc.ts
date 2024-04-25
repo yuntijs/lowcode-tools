@@ -11,6 +11,7 @@ const pkgDirList = readdirSync(join(__dirname, 'packages')).filter(
 );
 const pkgs = {
   'lowcode-i18n-extract': 'lowcode-i18n-extract',
+  'lowcode-materails-init': 'lowcode-materails-init',
 };
 export const alias = pkgDirList.reduce((pre, name) => {
   pre[`@yuntijs/${pkgs[name]}`] = join(__dirname, 'packages', name, 'src');
