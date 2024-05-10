@@ -1,0 +1,51 @@
+{
+  "name": "@yuntijs/lowcode-materails-init",
+  "version": "0.0.1",
+  "description": "lowcode materails init tools for components",
+  "keywords": [
+    "yuntijs",
+    "lowcode",
+    "low-code",
+    "low-code engine",
+    "low-code materails",
+    "materails"
+  ],
+  "homepage": "https://yuntijs.github.io/lowcode-tools/packages/lowcode-materails-init",
+  "bugs": {
+    "url": "https://github.com/yuntijs/lowcode-tools/issues/new"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuntijs/lowcode-tools.git"
+  },
+  "license": "MIT",
+  "main": "dist/cjs/index.js",
+  "module": "dist/es/index.js",
+  "types": "dist/es/index.d.ts",
+  "files": [
+    "dist",
+    "compiled"
+  ],
+  "scripts": {
+    "build": "father build",
+    "build:deps": "father prebundle",
+    "demo": "node demo/index.mjs",
+    "dev": "cross-env NODE_ENV=development father dev",
+    "prepublishOnly": "father doctor && npm run build",
+    "test": "node demo/index.mjs"
+  },
+  "dependencies": {
+    "@alilc/lowcode-material-parser": "^1.0.3",
+    "@alilc/lowcode-types": "^1.3.1",
+    "@types/react": "^18.2.79"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.4",
+    "antd": "^5.15.2",
+    "fs-extra": "^11.2.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org"
+  }
+}

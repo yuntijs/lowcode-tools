@@ -25,9 +25,10 @@ English ・ [简体中文](./README.zh-CN.md) ・ [Report Bug][github-issues-lin
 
 ## 📦 Ecosystem
 
-| NAME                                              | REPO                                                 | NPM                                          | DOWNLOAD                   |
-| ------------------------------------------------- | ---------------------------------------------------- | -------------------------------------------- | -------------------------- |
-| [@yuntijs/lowcode-i18n-extract][i18n-extract-url] | [packages/lowcode-i18n-extract][i18n-extract-github] | [![][i18n-extract-shield]][i18n-extract-url] | ![][i18n-extract-download] |
+| NAME                                                  | REPO                                                     | NPM                                              | DOWNLOAD                     |
+| ----------------------------------------------------- | -------------------------------------------------------- | ------------------------------------------------ | ---------------------------- |
+| [@yuntijs/lowcode-i18n-extract][i18n-extract-url]     | [packages/lowcode-i18n-extract][i18n-extract-github]     | [![][i18n-extract-shield]][i18n-extract-url]     | ![][i18n-extract-download]   |
+| [@yuntijs/lowcode-materails-init][materails-init-url] | [packages/lowcode-materails-init][materails-init-github] | [![][materails-init-shield]][materails-init-url] | ![][materails-init-download] |
 
 <div align="right">
 
@@ -103,5 +104,9 @@ This project is [MIT](./LICENSE) licensed.
 [i18n-extract-github]: https://github.com/yuntijs/lowcode-tools/tree/master/packages/lowcode-i18n-extract/README.md
 [i18n-extract-shield]: https://img.shields.io/npm/v/@yuntijs/lowcode-i18n-extract?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
 [i18n-extract-url]: https://www.npmjs.com/package/@yuntijs/lowcode-i18n-extract
+[materails-init-download]: https://img.shields.io/npm/dt/@yuntijs/lowcode-materails-init?labelColor=black&style=flat-square
+[materails-init-github]: https://github.com/yuntijs/lowcode-tools/tree/master/packages/lowcode-materails-init/README.md
+[materails-init-shield]: https://img.shields.io/npm/v/@yuntijs/lowcode-materails-init?color=369eff&labelColor=black&logo=npm&logoColor=white&style=flat-square
+[materails-init-url]: https://www.npmjs.com/package/@yuntijs/lowcode-materails-init
 [pr-welcome-link]: https://github.com/yuntijs/lowcode-tools/pulls
 [pr-welcome-shield]: https://img.shields.io/badge/☁️_pr_welcome-%E2%86%92-ffcb47?labelColor=black&style=for-the-badge
